@@ -1,0 +1,153 @@
+/* Base styles */
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    /* Define font-size variables */
+    --font-size-regular: 30px; /* Default text size */
+    --font-size-large: 60px; /* Large text size */
+    --font-size-small: 25px; /* Small text size */
+}
+
+body, h1, h2, p, button {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold; /* Makes the font bolder */
+    font-size: var(--font-size-regular); /* Sets the default font size */
+}
+
+h1 {
+    font-size: var(--font-size-large); /* Sets a larger font size for h1 */
+}
+
+h2 {
+    font-size: var(--font-size-regular); /* Adjust as needed */
+}
+
+p {
+    font-size: var(--font-size-small); /* Sets a smaller font size for paragraph text */
+}
+
+button {
+    font-size: var(--font-size-regular); /* Adjust as needed */
+}
+
+
+/* Gradient background for the whole page */
+body {
+    background: linear-gradient(to bottom, #007bff, #ffffff, #ff0000);
+    color: #000000;
+}
+
+header, .brand-section, .content-section, footer {
+    text-align: center;
+    padding: 50px;
+    border-radius: 20px; /* Rounded corners */
+    margin: 10px;
+    background: rgba(255, 255, 255, 0.308); /* Semi-transparent white background */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.brand-logo {
+    width: 200px;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 50%; /* Circular logo */
+}
+
+/* Call to action button styling */
+.cta-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 20px; /* Rounded corners for buttons */
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Button shadow for depth */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); /* Elevated shadow on hover */
+}
+
+/* Content section with scrollable content */
+.content-section {
+    min-height: 500px; /* Adjust height as needed for scrollable content */
+    overflow-y: auto;
+}
+
+footer {
+    background: rgba(207, 230, 255, 0.253); /* Solid color for footer */
+    color: #fff;
+    padding: 10px 0;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    header, .brand-section, .content-section, footer {
+        margin: 10px 5px;
+    }
+
+    .cta-button {
+        width: 80%; /* Full width on smaller screens */
+        padding: 15px 0;
+    }
+}
+.cta-button, a.cta-button {
+    display: inline-block; /* Allows anchor elements to have padding and width */
+    background-color: #007bff;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 20px; /* Rounded corners for buttons */
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none; /* Removes underline from links */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Button shadow for depth */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta-button:hover, a.cta-button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); /* Elevated shadow on hover */
+}
+/* Style for the container that holds the links */
+.links-container {
+    text-align: center; /* Center the buttons within this container */
+    padding: 20px; /* Provide some space around the container */
+    margin-top: 20px; /* Space from the top of the container to the rest of the content */
+}
+
+/* Style for the link buttons */
+.link-button {
+    display: inline-block; /* Allows buttons to have padding and margins */
+    margin: 10px; /* Space between buttons */
+    padding: 10px 20px; /* Padding inside the buttons */
+    background-color: #ffffff; /* White background color */
+    color: #000000; /* Black text color */
+    text-decoration: none; /* Removes the underline from the links */
+    border: 2px solid #ff0000; /* Red border color */
+    border-radius: 20px; /* Rounded corners */
+    transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
+    font-size: 16px; /* Font size for the text inside the buttons */
+    font-weight: bold; /* Makes the font a bit bolder */
+}
+
+/* Hover effect for the link buttons */
+.link-button:hover {
+    background-color: #ff0000; /* Red background color on hover */
+    color: #ffffff; /* White text color on hover */
+    border-radius: 30px; /* More rounded corners on hover */
+    text-decoration: none; /* Ensures that the underline does not reappear on hover */
+}
+
